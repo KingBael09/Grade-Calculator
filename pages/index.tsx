@@ -15,12 +15,12 @@ import {
   RegType,
 } from "../data/other";
 import data, { SemType, subjectType } from "../data/syllabus";
-import SelectComponent from "./components/common/selectComponent";
-import { default as Btn } from "./components/common/buttonComponent";
-import Results from "./components/results";
+import SelectComponent from "../components/common/selectComponent";
+import { default as Btn } from "../components/common/buttonComponent";
+import Results from "../components/results";
 import RefreshIcon from "@mui/icons-material/Refresh";
-import Dialog from "./components/common/dialogComponent";
-import Snackbar from "./components/common/snakcbarComponent";
+import Dialog from "../components/common/dialogComponent";
+import Snackbar from "../components/common/snakcbarComponent";
 
 type GradeType = {
   [key: string]: number;

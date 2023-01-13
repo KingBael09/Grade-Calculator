@@ -3,7 +3,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { RegType } from "../../../data/other";
+import { RegType } from "../../data/other";
 
 type SelectProps = {
   className: string;
