@@ -1,0 +1,10 @@
+[
+  { "name": "A++", "value": 10 },
+  { "name": "A+", "value": 9 },
+  { "name": "A", "value": 8 },
+  { "name": "B+", "value": 7 },
+  { "name": "B", "value": 6 },
+  { "name": "C+", "value": 5 },
+  { "name": "C", "value": 4 },
+  { "name": "D", "value": 0 }
+]

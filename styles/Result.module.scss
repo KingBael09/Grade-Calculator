@@ -1,0 +1,48 @@
+@media (min-width: 1024px) {
+  .containerHeading {
+    font-size: 3rem !important;
+  }
+}
+
+.flex {
+  display: flex;
+  &-col {
+    @extend .flex;
+    flex-direction: column;
+  }
+  &-center {
+    @extend .flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  @extend .flex-col, .flex-center;
+  flex: 1;
+  gap: 2rem;
+
+  &Heading {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+
+.res {
+  @extend .flex-col;
+  gap: 1rem;
+}
+
+.big {
+  font-size: 7rem;
+  font-weight: 700;
+  &Unit {
+    @extend .flex-center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  &Minor {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
