@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./../../styles/Result.module.scss";
+import styles from "../styles/Result.module.scss";
 
 const Results = (props: any) => {
   const Result: number = props.res;
@@ -20,7 +20,7 @@ const Results = (props: any) => {
                 {Result.toPrecision(2).toString().split(".")[0]}
               </span>
               <span className={styles.bigMinor}>
-                {Result.toPrecision(3).toString().split(".")[1]}
+                .{Result.toPrecision(3).toString().split(".")[1]}
               </span>
             </span>
             <span className={styles.bigUnit}>CGPA</span>
