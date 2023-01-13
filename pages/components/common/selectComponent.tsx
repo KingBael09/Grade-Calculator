@@ -3,8 +3,17 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { RegType } from "../../../data/other";
 
-const SelectComponent = (props: any) => {
+type SelectProps = {
+  className: string;
+  value: string | number;
+  label: string;
+  menu: RegType[];
+  onChange: any;
+};
+
+const SelectComponent = (props: SelectProps) => {
   const { value, onChange, label, menu, className } = props;
   return (
     <FormControl>

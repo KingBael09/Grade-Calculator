@@ -2,20 +2,28 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 
-const ButtonComponent = (props: any) => {
-  const { fullWidth, className, disabled } = props;
+type ButtonProps = {
+  className: string;
+  children: any;
+  onClick: any;
+  disabled?: boolean;
+  // fullWidth
+};
+
+const ButtonComponent = (props: ButtonProps) => {
+  const { className, disabled, onClick } = props;
   return (
     <motion.div
       whileTap={{ scale: 0.9 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
       <Button
-        onClick={props.onClick}
+        onClick={onClick}
         className={className}
         color="info"
         disabled={disabled}
         // disableElevation
-        fullWidth={fullWidth ? true : false}
+        // fullWidth={fullWidth ? true : false}
         variant="contained"
       >
         {props.children}

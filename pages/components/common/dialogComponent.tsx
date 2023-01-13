@@ -2,7 +2,12 @@ import React from "react";
 import { Dialog, DialogContent } from "@mui/material/";
 import Results from "../results";
 
-const DialogComponent = (props: any) => {
+type DailogProps = {
+  res: number;
+  action: [boolean, React.Dispatch<React.SetStateAction<boolean>>];
+};
+
+const DialogComponent = (props: DailogProps) => {
   const Result = props.res;
 
   const [modalLock, setmodalLock] = props.action;

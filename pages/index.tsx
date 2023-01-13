@@ -39,7 +39,7 @@ export default function Home() {
 
   const [Ref, setRef] = useState<subjectType>(data);
   const [modalLock, setmodalLock] = useState(false);
-  const [globalWidth, setGlobalWidth] = useState<number | undefined>();
+  const [globalWidth, setGlobalWidth] = useState<number>(0);
   const [errorTrigger, setErrorTrigger] = useState(false);
 
   const handleSubmit = () => {

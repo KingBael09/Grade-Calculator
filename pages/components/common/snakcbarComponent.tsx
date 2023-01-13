@@ -3,7 +3,12 @@ import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 
-const SnackbarCompoenet = (props: any) => {
+type SnackbarProps = {
+  action: [boolean, React.Dispatch<React.SetStateAction<boolean>>];
+  data: number;
+};
+
+const SnackbarCompoenet = (props: SnackbarProps) => {
   const [errorTrigger, setErrorTrigger] = props.action;
   const globalWidth = props.data;
   return (
