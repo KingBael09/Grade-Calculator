@@ -27,6 +27,7 @@ export const branchValues: RegType[] = [
   { name: "Civil", value: "Civil" },
   { name: "Electrical", value: "Electrical" },
   { name: "Mechanical", value: "Mechanical" },
+  { name: "Electroics & Telecommunication", value: "ENTC" },
   { name: "Computer Science", value: "CSE" },
   { name: "Information Technology", value: "IT" },
 ];
